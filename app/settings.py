@@ -31,12 +31,12 @@ class EpicSettings(AgentConfig):
     )
     
     GEMINI_BASE_URL: str = Field(
-        default=os.getenv("GEMINI_BASE_URL", "https://aihubmix.com"),
+        default=os.getenv("GEMINI_BASE_URL", "https://generativelanguage.googleapis.com"),
         description="中转地址",
     )
     
     GEMINI_MODEL: str = Field(
-        default=os.getenv("GEMINI_MODEL", "gemini-2.5-pro"),
+        default=os.getenv("GEMINI_MODEL", "gemini-2.5-flash"),
         description="模型名称",
     )
 
